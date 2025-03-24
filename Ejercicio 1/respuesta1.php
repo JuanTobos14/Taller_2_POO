@@ -20,7 +20,11 @@ class Nombre implements Modelo{
 class Acronimo extends Nombre{
     function toString(){
         $nombre=$this->nombre;
-
+        $acronimo=preg_split("/[\+\-\*\ ]/", $nombre);
+        $nombre=null;
+        foreach ($acronimo as $acronimo) {
+            $nombre.=$acronimo[0];
+        }
         return "$nombre";
     }
 }

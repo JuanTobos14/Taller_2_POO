@@ -10,12 +10,16 @@ $nombre->set('nombre', $_POST['nombre']);
 <head>
     <meta charset="UTF-8">
     <title>1. Acronimos</title>
+    <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
+    <main>
+    <h1>Generador de Acronimos</h1>
+    <a href="../Ejercicio 1/1.html">Volver</a>
     <div>
-        <?php
-        echo $nombre->toString().'<br>';
-        ?>
+        <p>El acrónimo de "<?php echo $nombre->nombre; ?>" es: </p>
+        <?php echo strtoupper($nombre->toString()); ?>
     </div>
+    </main>
 </body>
 </html>
