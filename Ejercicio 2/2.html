@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>1. Acronimos</title>
+    <title>Calculadora - Fibonacci y Factorial</title>
     <link rel="stylesheet" href="../estilo.css">
 </head>
-
 <body>
-    <main>
-        <a href="../Ejercicios.html">Volver</a>
-    </main>
-</body>
+    <a href="../Ejercicios.html">Volver</a>
+    <h1>Calculadora - Fibonacci y Factorial</h1>
+    <form action="fibonacci.php" method="POST">
+        <label for="numero">Ingrese un número:</label>
+        <input type="number" name="numero" id="numero" required>
 
+        <label for="operacion">Seleccione una operación:</label>
+        <select name="operacion" id="operacion">
+            <option value="fibonacci">Fibonacci</option>
+            <option value="factorial">Factorial</option>
+        </select>
+
+        <button type="submit">Calcular</button>
+    </form>
+</body>
 </html>
