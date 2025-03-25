@@ -1,29 +1,28 @@
 <?php
+include 'respuesta6.php';
 
-interface Model{
-    function get($prop);
-    function set($prop, $value);
-}
+$arbol = new Distincion($_POST['pre'], $_POST['ino'], $_POST['pos']); 
+$arbol->set('preorden', $_POST['pre']);
+$arbol->set('inorden', $_POST['ino']);
+$arbol->set('postorden', $_POST['pos']);
+?>
 
-class Arbol implements Model{
-    protected $preorden = null;
-    protected $inorden = null;
-    protected $postorder = null;
-
-    function get($prop){
-        return $this->{$prop};
-    }
-
-    function set($prop, $value){
-        $this->{$prop} = $value;
-    }
-}
-
-class Preorden extends Arbol{
-    function toString(){
-        $preorden = $this->preorden;
-        for ($i=0; $i<strlen($preorden); $i++){
-            
-        }
-    }
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>6. Árbol</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <main>
+        <h1>Árbol Binario</h1>
+        <a href="../Ejercicio 6/6.html">Volver</a>
+        <div>
+            <?php 
+            $arbol->toString();
+            ?>
+        </div>
+    </main>
+</body>
+</html>

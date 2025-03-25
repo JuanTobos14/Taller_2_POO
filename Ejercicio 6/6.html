@@ -3,13 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>1. Acronimos</title>
+    <title>6. Árbol</title>
     <link rel="stylesheet" href="../estilo.css">
 </head>
 
 <body>
     <main>
         <a href="../Ejercicios.html">Volver</a>
+        <h1>Árbol Binario</h1>
+        <p>Ingrese una <strong>secuencia de palabras, números o letras</strong> para crear un árbol binario</p>
+        <p>Debe ingresar minimo 2 de las 3 opciones de orden para construir el árbol</p>
+        <form action="../Ejercicio 6/logica6.php" method="post">
+            <div>
+                <label for="">Preorden:</label>
+                <input type="text" name="pre" placeholder="A→B→D→E→C">
+                <br>
+                <label for="">Inorden:</label>
+                <input type="text" name="ino" placeholder="D→B→E→A→C">
+                <br>
+                <label for="">Postorden:</label>
+                <input type="text" name="pos" placeholder="D→E→B→C→A">
+            </div>
+            <button type="submit">Enviar para procesar</button>
+        </form>
+        <br>
+        <a href="https://hhmosquera.wordpress.com/arbolesbinarios/" target="_blank">¿Cómo recorrer un árbol binario?</a>
     </main>
 </body>
 

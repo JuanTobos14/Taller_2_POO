@@ -1,7 +1,7 @@
 <?php
 include 'respuesta5.php';
 
-$entero = new Binario($_POST['entero']);
+$entero = new Binario($_POST['entero']); 
 $entero->set('entero', $_POST['entero']);
 ?>
 

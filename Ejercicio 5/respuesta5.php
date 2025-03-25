@@ -8,7 +8,7 @@ interface Modelo{
 class Numero implements Modelo{
     public $entero=null;
 
-    function get($prop){
+    function get($prop){ 
         return $this->{$prop};
     }
 

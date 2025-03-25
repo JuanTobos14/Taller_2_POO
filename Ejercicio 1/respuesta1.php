@@ -4,7 +4,7 @@ interface Modelo{
     function get($prop);
     function set($prop, $value);
 }
-
+ 
 class Nombre implements Modelo{
     public $nombre=null;
 

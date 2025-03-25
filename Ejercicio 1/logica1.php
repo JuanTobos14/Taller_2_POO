@@ -1,7 +1,7 @@
 <?php
 include 'respuesta1.php';
 
-$nombre = new Acronimo($_POST['nombre']);
+$nombre = new Acronimo($_POST['nombre']); 
 $nombre->set('nombre', $_POST['nombre']);
 ?>
 
